@@ -15,6 +15,6 @@ class PageController extends Controller
     {
         $dateNow = '2000-02-10 00:00:00'; // To day, for example
         $trainList = Train::where('orario_partenza', '>', $dateNow)->get();;
-        return view('home', compact('trainList'));
+        return view('home', compact('trainList', 'dateNow'));
     }
 }

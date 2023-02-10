@@ -1,1 +1,29 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url('https://today.thefinancialexpress.com.bd/uploads/1517506632.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    height: 100px;
+}
+
+
+main {
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 50px 0;
+}
+
+div.train-card {
+    height: 300px;
+    border: 3px solid black;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: white;
+}
